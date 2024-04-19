@@ -2,7 +2,7 @@ import math
 
 
 
-def calculadoraCientifica():
+def calculadora():
 
   dic_math = {nombre: getattr(math, nombre) for nombre in dir(math) if nombre[0] != "_"}
   dic_operaciones = {nombre: getattr(math, nombre) for nombre in dir(math) if nombre[0] != "_" and callable(getattr(math, nombre))}
@@ -32,13 +32,13 @@ def calculadoraCientifica():
       print("Precionando la flecha hacia arriba en tu teclado, puedes recuperar el input anterior")
       print("La calculadora utiliza la libreria matematica de python, si quieres mas detalles sobre una funcion los puedes encontrar aqui: https://docs.python.org/3/library/math.html")
       print("")
-      return calculadoraCientifica()
+      return calculadora()
     resultado = eval(operacion, dic_math)
     print(f"Resultado: {resultado}")
     print("")
-    return calculadoraCientifica()
+    return calculadora()
   except Exception as error:
     print("Error:",error)
-    return calculadoraCientifica()
+    return calculadora()
 
-calculadoraCientifica()
+calculadora()
