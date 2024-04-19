@@ -1,5 +1,5 @@
 import math
-import re
+
 
 
 def calculadoraCientifica():
