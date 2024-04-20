@@ -59,7 +59,7 @@ Ahora solo tienes que ingresar las operaciones que desees y presionar enter para
 ```bash
 (pi*3)*cos(4)/sin(2)
 ```
-Resultado en consola:
+ 
 ```bash
 >> (pi*3)*cos(4)/sin(2)
 Resultado: -6.774951528916912
@@ -73,7 +73,7 @@ Puedes realizar operaciones algebraicas y asignarle valores a variables
 ```bash
 fn('x**2+2*y+5', {'x':3, 'y':5})
 ```
-Resultado en consola:
+ 
 ```bash
 >> fn('x**2+2*y+5', {'x':3, 'y':5})
 Resultado: 24
@@ -84,7 +84,7 @@ Reutilizar los valores de 'x' y 'y'
 ```bash
 8*x + y**2
 ```
-Resultado en consola:
+ 
 ```bash
 >> 8*x + y**2
 Resultado: 49
@@ -96,7 +96,7 @@ Puedes ver mas detalles de uso con con el menu de comandos, solo escribe lo que 
 ```bash
 funciones
 ```
-Resultado en consola:
+ 
 ```bash
 Comandos:
 operacion
