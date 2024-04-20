@@ -1,6 +1,6 @@
 # Calculadora
 
-Una simple calculadora para utilizar en la consola. Puede realizar todas las operaciones de la libreria math the python y resolver funciones algebraicas.
+Una simple calculadora para utilizar en la consola. Puede realizar todas las operaciones de la librería math de python y resolver funciones algebraicas.
 
 ## Requerimientos
 
@@ -28,7 +28,7 @@ cd calculadora
 python calculadora.py
 ```
 
-Si se ejecuto correctamente te aparecera algo asi:
+Si se ejecuto correctamente te aparecerá algo así:
 
 ```bash
 Comandos:
@@ -55,7 +55,7 @@ Ahora solo tienes que ingresar las operaciones que desees y presionar enter para
 Resultado: -6.774951528916912
 ```
 
-La calculadora tiene una lista de comandos que puedes utilizar para obtener mayor informacion de como utilizar cada funcion.
+La calculadora tiene una lista de comandos que puedes utilizar para obtener mayor información de como funciona.
 
 Puedes realizar operaciones algebraicas y asignarle valores a variables
 
@@ -81,7 +81,7 @@ Resultado: 49
 ```
 Donde conservaran los valores asignados en el input anterior
 
-Puedes ver mas detalles de uso con con el menu de comandos, solo escribe lo que te interese ver.
+Puedes ver mas detalles de uso con con el menú de comandos, solo escribe lo que te interese ver.
 
 ```bash
 funciones
@@ -89,7 +89,7 @@ funciones
  
 ```bash
 Comandos:
-operacion
+operación
 algebra
 funciones
 constantes
@@ -103,7 +103,7 @@ Funciones validas: acos acosh asin asinh atan atan2 atanh cbrt ceil comb copysig
 
 Instrucciones:
 
->>Al usar una funcion valida debes utilizar parentesis para escribir la variable.
+>>Al usar una función valida debes utilizar paréntesis para escribir la variable.
 
         Ejemplo:
         >> sin(5), log(3), sqrt(9).
@@ -113,7 +113,7 @@ Instrucciones:
         Ejemplo:
         pow(2,2).
 
->>La calculadora utiliza la libreria matematica de python, si quieres mas detalles sobre una funcion los puedes encontrar aqui: https://docs.python.org/3/library/math.html
+>>La calculadora utiliza la librería matemática de python, si quieres mas detalles sobre una función los puedes encontrar aquí: https://docs.python.org/3/library/math.html
 ```
 
 Para salir del archivo solo escribe exit
@@ -127,6 +127,6 @@ exit
 Fin del programa
 ```
 
-La consola es sensible a los espacios asi que asegurate de siempre escribir exactamente el comando que deseas sin espacios adicionales, y respetando comillas, parentesis, letras, etc.
+La consola es sensible a los espacios así que asegúrate de siempre escribir exactamente el comando que deseas sin espacios adicionales, y respetando comillas, paréntesis, letras, etc.
 
 Gracias por utilizar la calculadora. 
