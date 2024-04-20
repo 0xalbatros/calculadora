@@ -1,21 +1,22 @@
-# calculadora
+# Calculadora
 
 Una simple calculadora para utilizar en la consola. Puede realizar todas las operaciones de la libreria math the python y resolver funciones algebraicas.
 
 ## Requerimientos
 
-1.Git: Necesitas tener Git instalado en tu sistema para poder clonar el repositorio desde GitHub. Puedes descargar e instalar Git desde el sitio web oficial: https://git-scm.com/.
-2.Python: Debes tener Python instalado en tu sistema para poder ejecutar el archivo de Python. Puedes descargar e instalar Python desde el sitio web oficial: https://www.python.org/. Asegúrate de configurar correctamente la variable de entorno PATH durante la instalación para que puedas ejecutar el comando python desde cualquier ubicación en tu terminal.
+1. Git: Necesitas tener Git instalado en tu sistema para poder clonar el repositorio desde GitHub. Puedes descargar e instalar Git desde el sitio web oficial: https://git-scm.com/.
+
+2. Python: Debes tener Python instalado en tu sistema para poder ejecutar el archivo de Python. Puedes descargar e instalar Python desde el sitio web oficial: https://www.python.org/. Asegúrate de configurar correctamente la variable de entorno PATH durante la instalación para que puedas ejecutar el comando python desde cualquier ubicación en tu terminal.
 
 ## Clonar el repositorio
 
-1.Abre tu terminal y utiliza el comando git clone seguido de la URL del repositorio de GitHub para clonar el repositorio en tu máquina local. Por ejemplo:
+1. Abre tu terminal y utiliza el comando git clone seguido de la URL del repositorio de GitHub para clonar el repositorio en tu máquina local. Por ejemplo:
 
 ```bash
 git clone https://github.com/0xalbatros/calculadora.git
 ```
 
-2.Navegar al directorio del repositorio: Utiliza el comando cd para cambiar al directorio del repositorio que acabas de clonar. Por ejemplo:
+2. Navegar al directorio del repositorio: Utiliza el comando cd para cambiar al directorio del repositorio que acabas de clonar. Por ejemplo:
 
 ```bash
 cd calculadora
