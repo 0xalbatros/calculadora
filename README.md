@@ -28,17 +28,6 @@ cd calculadora
 python calculadora.py
 ```
 
-## Uso
-
-1. Abre la consola y navega hasta la ubicación del archivo `calculadora.py`.
-2. Ejecuta el siguiente comando para iniciar la calculadora:
-
-```bash
-python calculadora.py
-```
-
-Asegurate de escribir el comando desde la ubicacion del archivo.
-
 Si se ejecuto correctamente te aparecera algo asi:
 
 ```bash
@@ -53,8 +42,9 @@ exit
 >>
 ```
 
-Ahora solo tienes que ingresar las operaciones que desees y presionar enter para obtener el resultado.
+## Uso
 
+Ahora solo tienes que ingresar las operaciones que desees y presionar enter para obtener el resultado.
 
 ```bash
 (pi*3)*cos(4)/sin(2)
