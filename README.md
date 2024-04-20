@@ -50,15 +50,18 @@ constantes
 exit
 
 
-Input:
+>>
 ```
 
 Ahora solo tienes que ingresar las operaciones que desees y presionar enter para obtener el resultado.
 
-Ejemplo:
 
 ```bash
-Input: (pi*3)*cos(4)/sin(2)
+(pi*3)*cos(4)/sin(2)
+```
+Resultado en consola:
+```bash
+>> (pi*3)*cos(4)/sin(2)
 Resultado: -6.774951528916912
 ```
 
@@ -66,24 +69,34 @@ La calculadora tiene una lista de comandos que puedes utilizar para obtener mayo
 
 Puedes realizar operaciones algebraicas y asignarle valores a variables
 
-Ejemplo:
 
 ```bash
-Input: fn('x**2+2*y+5', {'x':3, 'y':5})
+fn('x**2+2*y+5', {'x':3, 'y':5})
+```
+Resultado en consola:
+```bash
+>> fn('x**2+2*y+5', {'x':3, 'y':5})
 Resultado: 24
 ```
+
 Reutilizar los valores de 'x' y 'y'
 
 ```bash
-Input: 8*x + y**2
+8*x + y**2
+```
+Resultado en consola:
+```bash
+>> 8*x + y**2
 Resultado: 49
 ```
 Donde conservaran los valores asignados en el input anterior
 
 Puedes ver mas detalles de uso con con el menu de comandos, solo escribe lo que te interese ver.
 
-Ejemplo:
-
+```bash
+funciones
+```
+Resultado en consola:
 ```bash
 Comandos:
 operacion
@@ -93,7 +106,7 @@ constantes
 exit
 
 
-Input:funciones
+>>funciones
 
 Funciones validas: acos acosh asin asinh atan atan2 atanh cbrt ceil comb copysign cos cosh degrees dist erf erfc exp exp2 expm1 fabs factorial floor fmod frexp fsum gamma gcd hypot isclose isfinite isinf isnan isqrt lcm ldexp lgamma log log10 log1p log2 modf nextafter perm pow prod radians remainder sin sinh sqrt sumprod tan tanh trunc ulp e pi tau fn __builtins__ x y
 
@@ -103,7 +116,7 @@ Instrucciones:
 >>Al usar una funcion valida debes utilizar parentesis para escribir la variable.
 
         Ejemplo:
-        Input: sin(5), log(3), sqrt(9).
+        >> sin(5), log(3), sqrt(9).
 
 >>Hay algunas funciones validas que requieren dos variables.
 
@@ -115,8 +128,12 @@ Instrucciones:
 
 Para salir del archivo solo escribe exit
 
+
 ```bash
-Input: exit
+exit
+```
+```bash
+>> exit
 Fin del programa
 ```
 
