@@ -59,6 +59,7 @@ Ejemplo:
 
 ```bash
 Input: (pi*3)*cos(4)/sin(2)
+Resultado: -6.774951528916912
 ```
 
 La calculadora tiene una lista de comandos que puedes utilizar para obtener mayor informacion de como utilizar cada funcion.
@@ -69,11 +70,13 @@ Ejemplo:
 
 ```bash
 Input: fn('x**2+2*y+5', {'x':3, 'y':5})
+Resultado: 24
 ```
 Reutilizar los valores de 'x' y 'y'
 
 ```bash
 Input: 8*x + y**2
+Resultado: 49
 ```
 Donde conservaran los valores asignados en el input anterior
 
@@ -91,12 +94,30 @@ exit
 
 
 Input:funciones
+
+Funciones validas: acos acosh asin asinh atan atan2 atanh cbrt ceil comb copysign cos cosh degrees dist erf erfc exp exp2 expm1 fabs factorial floor fmod frexp fsum gamma gcd hypot isclose isfinite isinf isnan isqrt lcm ldexp lgamma log log10 log1p log2 modf nextafter perm pow prod radians remainder sin sinh sqrt sumprod tan tanh trunc ulp e pi tau fn __builtins__ x y
+
+
+Instrucciones:
+
+>>Al usar una funcion valida debes utilizar parentesis para escribir la variable.
+
+        Ejemplo:
+        Input: sin(5), log(3), sqrt(9).
+
+>>Hay algunas funciones validas que requieren dos variables.
+
+        Ejemplo:
+        pow(2,2).
+
+>>La calculadora utiliza la libreria matematica de python, si quieres mas detalles sobre una funcion los puedes encontrar aqui: https://docs.python.org/3/library/math.html
 ```
 
 Para salir del archivo solo escribe exit
 
 ```bash
 Input: exit
+Fin del programa
 ```
 
 La consola es sensible a los espacios asi que asegurate de siempre escribir exactamente el comando que deseas sin espacios adicionales, y respetando comillas, parentesis, letras, etc.
