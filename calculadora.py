@@ -1,8 +1,11 @@
 import math
+import re
 
 dic_operaciones = {nombre: getattr(math, nombre) for nombre in dir(math) if nombre[0] != "_" and callable(getattr(math, nombre))}
 dic_mathNums = {nombre: getattr(math, nombre) for nombre in dir(math) if nombre == "pi" or nombre == "e" or nombre == "tau" }
 dic_operaciones.update(dic_mathNums)
+
+
 
 def algebra(expresion, variables):
   try:
@@ -15,11 +18,21 @@ def algebra(expresion, variables):
 
 dic_operaciones.update({"fn":algebra})
 
+
+def validar(input):
+  funciones = r'([\+\-\*\/\^\s]|acos|acosh|asin|asinh|atan|atan2|atanh|cbrt|ceil|comb|copysign|cos|cosh|degrees|dist|erf|erfc|exp|exp2|expm1|fabs|factorial|floor|fmod|frexp|fsum|gamma|gcd|hypot|isclose|isfinite|isinf|isnan|isqrt|lcm|ldexp|lgamma|log|log10|log1p|log2|modf|nextafter|perm|pow|prod|radians|remainder|sin|sinh|sqrt|sumprod|tan|tanh|trunc|ulp|fn)+\('
+  funciones = re.findall(funciones, input)
+  parentesis = re.findall(r'\(', input)
+  if len(parentesis) > 0 and len(funciones) == 0:
+    raise Exception("Input invalido")
+
+
 print("\n\nComandos:\noperación\nalgebra\nfunciones\nconstantes\nexit\n\n")
 
 def calculadora():
   try:
     operacion = input(">> ")
+    validar(operacion)
     if operacion == "exit":
       return print("Fin del programa")
     if operacion == "operacion":
@@ -43,5 +56,5 @@ def calculadora():
     print("Error:",error)
     return calculadora()
 
-calculadora()
 
+calculadora()
