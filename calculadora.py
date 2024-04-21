@@ -20,8 +20,8 @@ dic_operaciones.update({"fn":algebra})
 
 
 def validar(input):
-  funciones = r'([\+\-\*\/\^\s]|acos|acosh|asin|asinh|atan|atan2|atanh|cbrt|ceil|comb|copysign|cos|cosh|degrees|dist|erf|erfc|exp|exp2|expm1|fabs|factorial|floor|fmod|frexp|fsum|gamma|gcd|hypot|isclose|isfinite|isinf|isnan|isqrt|lcm|ldexp|lgamma|log|log10|log1p|log2|modf|nextafter|perm|pow|prod|radians|remainder|sin|sinh|sqrt|sumprod|tan|tanh|trunc|ulp|fn)+\('
-  funciones = re.findall(funciones, input)
+  regex = r'([\+\-\*\/\^\s]|acos|acosh|asin|asinh|atan|atan2|atanh|cbrt|ceil|comb|copysign|cos|cosh|degrees|dist|erf|erfc|exp|exp2|expm1|fabs|factorial|floor|fmod|frexp|fsum|gamma|gcd|hypot|isclose|isfinite|isinf|isnan|isqrt|lcm|ldexp|lgamma|log|log10|log1p|log2|modf|nextafter|perm|pow|prod|radians|remainder|sin|sinh|sqrt|sumprod|tan|tanh|trunc|ulp|fn)+\('
+  funciones = re.findall(regex, input)
   parentesis = re.findall(r'\(', input)
   if len(parentesis) > 0 and len(funciones) == 0:
     raise Exception("Input invalido")
