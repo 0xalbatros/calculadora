@@ -15,6 +15,7 @@ def algebra(expresion, variables):
   except Exception as error:
     print(error)
 
+
 diccionario.update({"fn":algebra})
 
 def validar(input):
@@ -27,10 +28,8 @@ def validar(input):
   resultado = eval(input, diccionario)
   try:
     float(resultado)
-    int(resultado)
     complex(resultado)
   except Exception:
-    print("Input invalido")
     return calculadora()
 
 print("\n\nComandos:\noperación\nalgebra\nfunciones\nconstantes\nexit\n\n")
